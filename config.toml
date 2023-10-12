@@ -42,10 +42,34 @@ file_path = "logs/myapp.log"
 format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
 [messages]
-welcome = "Welcome message"
-help = "Help message"
-anti_flood = "Anti flood message"
-unknown_update = "This feature is not supported yet"
+welcome = "Welcome message"  # TODO
+help = "Help message"  # TODO
+anti_flood = "Anti flood message"  # TODO
+unknown_update = "This feature is not supported yet"  # TODO, be creative
+rating = "Rating message:\n\n{}"
+not_enough_teams = "Недостаточно команд для начала игры"
+not_enough_points = "Недостаточно КПшек для начала игры"
+starting_point = "Your starting point: {}"
+broadcast_failures = "Broadcast failures:\n\n{}"
+broadcast_success = "Broadcast success"
+game_started = "Game started"
+invalid_admin_password = "Invalid admin password"
+admin_password_set = "Admin password set"
+admin_registered = "Admin registered"
+choose_team = "Choose team"
+get_add_balance_amount = "Enter amount to add"
+balance_added = "Balance added"
+invalid_manager_password = "Invalid manager password"
+manager_password_set = "Manager password set"
+manager_registered = "Manager registered"
+invalid_point_name = "Invalid point name"
+point_registered = "Point registered"
+team_balance = "Your balance: {}"
+get_teamname = "Enter team name"
+team_registered = "Team registered"
+invalid_teamname = "Invalid team name"
+teamname_taken = "Team name taken"
+
 
 [buttons]
 help = "Help"

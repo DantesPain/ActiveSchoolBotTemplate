@@ -1,5 +1,5 @@
 from telebot import TeleBot
-from telebot.custom_filters import StateFilter
+from telebot.custom_filters import StateFilter, IsDigitFilter
 
 
 from .callback_data import CallbackDataFilter
@@ -13,3 +13,4 @@ def add_custom_filters(bot: TeleBot, owner_tg_id: int):
     bot.add_custom_filter(TextEqualsFilter())
     bot.add_custom_filter(CallbackDataFilter())
     bot.add_custom_filter(IsOwnerFilter(owner_tg_id))
+    bot.add_custom_filter(IsDigitFilter())

@@ -58,6 +58,29 @@ class MessagesConfig:
     help: str
     anti_flood: str
     unknown_update: str
+    rating: str
+    not_enough_teams: str
+    not_enough_points: str
+    starting_point: str
+    broadcast_failures: str
+    broadcast_success: str
+    game_started: str
+    invalid_admin_password: str
+    admin_password_set: str
+    admin_registered: str
+    choose_team: str
+    get_add_balance_amount: str
+    balance_added: str
+    invalid_manager_password: str
+    manager_password_set: str
+    manager_registered: str
+    invalid_point_name: str
+    point_registered: str
+    team_balance: str
+    get_teamname: str
+    team_registered: str
+    invalid_teamname: str
+    teamname_taken: str
 
 
 @dataclass

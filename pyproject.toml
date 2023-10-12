@@ -26,7 +26,7 @@ classifiers = [
 [project.optional-dependencies]
 
 [project.urls]
-"Homepage" = "https://github.com/Cub11k/tgBotTemplate"
+"Homepage" = "https://github.com/Cub11k/ActiveSchoolBotTemplate"
 
 [project.scripts]
 launch-polling = "mypackage:main"

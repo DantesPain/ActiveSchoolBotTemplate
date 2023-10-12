@@ -21,3 +21,10 @@ def empty_reply():
 
 def remove_reply():
     return ReplyKeyboardRemove()
+
+
+def teams_inline(teams: dict[int, dict]) -> InlineKeyboardMarkup:
+    keyboard = InlineKeyboardMarkup(row_width=2)
+    buttons = [InlineKeyboardButton(team["name"], callback_data=user_id) for user_id, team in teams.items()]
+    keyboard.add(*buttons)
+    return keyboard
