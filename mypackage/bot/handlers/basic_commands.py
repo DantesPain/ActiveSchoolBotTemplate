@@ -49,15 +49,20 @@ def reset_handler(
         teams = data.get('teams', {})
         managers = data.get('managers', [])
         admins = data.get('admins', [])
-    if message.from_user.id in teams:
-        teams.pop(message.from_user.id)
+    if str(message.from_user.id) in teams:
+        teams.pop(str(message.from_user.id))
         bot.add_data(bot.user.id, teams=teams)
+        bot.send_message(message.chat.id, "Team deleted")
     elif message.from_user.id in managers:
         managers.remove(message.from_user.id)
         bot.add_data(bot.user.id, managers=managers)
+        bot.send_message(message.chat.id, "Manager deleted")
     elif message.from_user.id in admins:
         admins.remove(message.from_user.id)
         bot.add_data(bot.user.id, admins=admins)
+        bot.send_message(message.chat.id, "Admin deleted")
+    else:
+        bot.send_message(message.chat.id, "Reset with no actions")
 
 
 def register_handlers(bot: TeleBot, buttons: ButtonsConfig):
