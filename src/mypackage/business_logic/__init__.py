@@ -55,10 +55,6 @@ def assign_starting_point_messages(teams: dict[int, dict], points: list[str], ba
     """
     result = {}
     # Assign starting points to teams
-    for i, user_id in enumerate(teams):
-        point_name = points[i % len(points)]
-        message = base_message.format(point_name)
-        result[teams[user_id]['chat_id']] = message
     return result
 
 
@@ -70,7 +66,4 @@ def broadcast_starting_points(bot: TeleBot, messages: dict[int, str]) -> dict[in
     :return: Dictionary of results: {chat_id: result}
     """
     result = {}
-    for chat_id, message in messages.items():
-        result[chat_id] = send_text(bot, chat_id, message)
-    # Broadcast starting points to teams, using send_text function
     return result
