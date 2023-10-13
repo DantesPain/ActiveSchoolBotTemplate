@@ -67,11 +67,11 @@ def override_config_with_env_vars(config_data: dict, config_env_mapping: dict) -
 
 
 def parse_config_file(config_path: str) -> dict:
-    # this function is just a wrapper around the tomllib.load function
+    # this function is just a wrapper around the tomllib.loads function
     # you can use any other config parser, e.g. pyyaml, toml, etc. and add any other parsing logic here
 
-    with open(config_path, 'rb') as f:
-        return tomllib.load(f)
+    with open(config_path, 'r', encoding='utf-8') as f:
+        return tomllib.loads(f.read())
 
 
 def create_retort(strict_coercion: bool, *args, **kwargs) -> Retort:
