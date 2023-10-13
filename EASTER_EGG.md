@@ -4,11 +4,14 @@
 This template is designed to help you create a telegram bot for a simple quest
 
 ## 2. Installation
+1. Create a fork of this repository and clone it to your local machine
+2. Clone the repository to your local machine
+
 ```bash
 # Clone the repository
-git clone https://github.com/Cub11k/ActiveSchoolBotTemplate.git
+git clone https://github.com/<your-username>/ActiveSchoolBotTemplate.git
 # or via SSH (preferred)
-git clone git@github.com:Cub11k/ActiveSchoolBotTemplate.git
+git clone git@github.com:<your-username>/ActiveSchoolBotTemplate.git
 
 # Create a virtual environment, you may use python3.9 or higher
 python3.9 -m venv venv
@@ -45,10 +48,11 @@ launch-polling config.toml
 ```
 
 ## 5. Usage - production
-There is a production-ready server waiting for your bot to be deployed.
-
-Simply push your changes in the source code (excluding `config.toml`) to the `dev` branch of the remote repository 
-and the bot will be deployed automatically.
+1. There is a production-ready server waiting for your bot to be deployed.
+2. Push your changes in the source code (excluding `config.toml`) to your GitHub repository.
+3. Create a Pull Request to the `dev` branch of the base repository.
+4. The bot will be deployed automatically after the PR is merged.
+5. You will find the working bot [here](https://t.me/profhome_sha_bot)
 
 ## 6. Easter egg
 
