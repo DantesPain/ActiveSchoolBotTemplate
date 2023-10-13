@@ -22,9 +22,8 @@ venv\Scripts\activate.bat  # Windows Cmd
 venv\Scripts\activate.ps1  # Windows PowerShell
 
 # Install the package
-# pip>=21.3 is required
 # Note that you should be in the root directory of the project
-pip install -e .
+pip install -r requirements.txt
 ```
 
 ## 3. Development
@@ -44,7 +43,7 @@ You will have to fill in the gaps, that are left, primarily in `config.toml` and
 
 ### 4.3. Run the bot
 ```bash
-launch-polling config.toml
+python -m mypackage config.toml
 ```
 
 ## 5. Usage - production
