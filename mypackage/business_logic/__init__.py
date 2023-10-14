@@ -2,7 +2,7 @@ from telebot import TeleBot
 from telebot.util import antiflood
 from telebot.apihelper import ApiException
 
-#check
+#check2
 
 
 def send_text(bot: TeleBot, chat_id: int, text: str) -> bool:
