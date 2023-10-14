@@ -2,6 +2,8 @@ from telebot import TeleBot
 from telebot.util import antiflood
 from telebot.apihelper import ApiException
 
+#check
+
 
 def send_text(bot: TeleBot, chat_id: int, text: str) -> bool:
     result = True
